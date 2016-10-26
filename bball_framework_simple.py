@@ -13,16 +13,23 @@ class BaseballGame:
 
 	#play the game
 	def play_game(self):
-		team = 'away'
+		batting_team = 'away'
 		inning = 0 
 
 		while inning < 10:
-			self.play_inning(team)
+			self.play_inning(batting_team)
 
-			if team == 'away':
-				team = 'home'
+			if batting_team == 'away':
+				batting_team = 'home'
 			else:
 				inning += 1
+				batting_team = 'away'
+
+		print('///////////////')
+		print('Scoreboard:')
+		print('Home Team = ' + str(self.home_score))
+		print('Away Team = ' + str(self.away_score))
+		print('///////////////')
 
 	#play an inning
 	def play_inning(self,team):
