@@ -8,10 +8,10 @@ Intro to python projects via baseball
 # files
 There are two files:
 
-1.bball_framework_simple.py
+1. bball_framework_simple.py
    bball_framework_simple is the barebones minimum. Start here.  
    Run `python bball_framework_simple.py` to see the end results of a game.
-2.bball_framework_example.py
+2. bball_framework_example.py
    This has a better advance_runners function, and uses print statements to show the game.
    Run `python bball_framework_example.py` for a cool demo, but try not to look at the code until you’re done!
 
